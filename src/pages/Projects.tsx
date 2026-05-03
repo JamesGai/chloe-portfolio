@@ -48,10 +48,10 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12">
-      <section className="bg-natural-100 p-8 md:p-12 lg:p-16 rounded-[32px] border border-natural-300">
-        <div className="mb-12 border-b border-natural-300 pb-8">
-          <h1 className="text-5xl md:text-6xl font-serif text-natural-800 tracking-tight">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 md:py-12">
+      <section className="bg-natural-100 p-6 sm:p-8 md:p-12 lg:p-16 rounded-[24px] md:rounded-[32px] border border-natural-300">
+        <div className="mb-8 md:mb-12 border-b border-natural-300 pb-6 md:pb-8">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif text-natural-800 tracking-tight">
             Projects
           </h1>
         </div>
@@ -63,19 +63,19 @@ export default function Projects() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white rounded-[24px] border border-natural-200 p-8 min-h-[320px] flex flex-col hover:shadow-xl hover:shadow-natural-500/5 hover:border-natural-500 transition-all group"
+              className="bg-white rounded-[20px] md:rounded-[24px] border border-natural-200 p-6 sm:p-8 min-h-[280px] md:min-h-[320px] flex flex-col hover:shadow-xl hover:shadow-natural-500/5 hover:border-natural-500 transition-all group"
             >
-              <div className="mb-8 flex items-center justify-between gap-4">
-                <div className="h-14 w-14 rounded-2xl bg-natural-500 text-white flex items-center justify-center shadow-lg shadow-natural-500/20 group-hover:scale-105 transition-transform">
+              <div className="mb-6 md:mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div className="h-12 w-12 md:h-14 md:w-14 rounded-2xl bg-natural-500 text-white flex items-center justify-center shadow-lg shadow-natural-500/20 group-hover:scale-105 transition-transform">
                   {project.icon}
                 </div>
-                <span className="rounded-full bg-natural-100 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-natural-500 border border-natural-200 text-center">
+                <span className="rounded-full bg-natural-100 px-3 py-1 text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.14em] sm:tracking-[0.18em] text-natural-500 border border-natural-200 text-center">
                   {project.type}
                 </span>
               </div>
 
               <div className="flex-1">
-                <h2 className="text-3xl md:text-4xl font-serif text-natural-800 leading-tight mb-5 group-hover:text-natural-500 transition-colors">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-natural-800 leading-tight mb-4 md:mb-5 group-hover:text-natural-500 transition-colors">
                   {project.title}
                 </h2>
                 <p className="text-base md:text-lg text-natural-600 font-light leading-relaxed">
