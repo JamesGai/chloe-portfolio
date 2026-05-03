@@ -1,3 +1,4 @@
+import { Coffee } from "lucide-react";
 import { motion } from "motion/react";
 
 const profileImagePath = "/chloe.jpg";
@@ -32,6 +33,10 @@ export default function IntroductionSection() {
               </span>
               <span className="px-5 py-2.5 bg-natural-100 rounded-full text-xs font-bold uppercase tracking-wider text-natural-500">
                 Spatial Memory
+              </span>
+              <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-white rounded-full text-xs font-bold uppercase tracking-wider text-natural-500 border border-natural-300 shadow-sm shadow-natural-500/10 ring-1 ring-natural-500/15">
+                <Coffee className="h-4 w-4" />
+                Practicing Barista
               </span>
             </div>
           </div>
