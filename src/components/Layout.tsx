@@ -1,11 +1,13 @@
 import { motion, AnimatePresence } from "motion/react";
 import { useLocation, Outlet } from "react-router-dom";
+import Navbar from "./Navbar";
 
-export default function Footer() {
+export default function Layout() {
   const location = useLocation();
 
   return (
     <div className="min-h-screen bg-natural-50 text-natural-700">
+      <Navbar />
       <main className="pt-24 pb-20">
         <AnimatePresence mode="wait">
           <motion.div
