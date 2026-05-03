@@ -21,7 +21,6 @@ export default function Layout() {
           </motion.div>
         </AnimatePresence>
       </main>
-
       <footer className="pt-20 pb-12 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center border-t border-natural-300 pt-8 space-y-6 md:space-y-0 text-[10px] uppercase tracking-[0.2em] text-natural-400 font-bold">
           <span>Based in The University of Auckland</span>
