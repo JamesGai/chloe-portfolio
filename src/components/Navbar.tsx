@@ -14,8 +14,17 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-natural-50/80 backdrop-blur-md border-b border-natural-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 md:h-20 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+    <>
+      {isMenuOpen && (
+        <button
+          type="button"
+          aria-label="Close navigation menu"
+          onClick={() => setIsMenuOpen(false)}
+          className="fixed inset-0 z-[60] bg-natural-800/25 backdrop-blur-sm md:hidden"
+        />
+      )}
+      <nav className="fixed top-0 left-0 right-0 z-[70] bg-natural-50/80 backdrop-blur-md border-b border-natural-300">
+      <div className="relative z-[70] max-w-7xl mx-auto px-4 sm:px-6 py-3 md:h-20 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div className="flex items-center justify-between">
           <Link
             to="/"
@@ -93,6 +102,7 @@ export default function Navbar() {
           </motion.div>
         )}
       </div>
-    </nav>
+      </nav>
+    </>
   );
 }
