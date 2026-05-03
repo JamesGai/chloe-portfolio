@@ -71,11 +71,11 @@ export default function Projects() {
               transition={{ delay: index * 0.1 }}
               className="bg-white rounded-[20px] md:rounded-[24px] border border-natural-200 p-6 sm:p-8 min-h-[280px] md:min-h-[320px] flex flex-col hover:shadow-xl hover:shadow-natural-500/5 hover:border-natural-500 transition-all group"
             >
-              <div className="mb-6 md:mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                <div className="h-12 w-12 md:h-14 md:w-14 rounded-2xl bg-natural-500 text-white flex items-center justify-center shadow-lg shadow-natural-500/20 group-hover:scale-105 transition-transform">
+              <div className="mb-6 md:mb-8 flex items-center justify-between gap-4">
+                <div className="h-12 w-12 md:h-14 md:w-14 rounded-2xl bg-natural-500 text-white flex items-center justify-center shadow-lg shadow-natural-500/20 group-hover:scale-105 transition-transform shrink-0">
                   {project.icon}
                 </div>
-                <span className="rounded-full bg-natural-100 px-3 py-1 text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.14em] sm:tracking-[0.18em] text-natural-500 border border-natural-200 text-center">
+                <span className="flex-1 rounded-full bg-natural-100 px-3 py-1 text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.14em] sm:tracking-[0.18em] text-natural-500 border border-natural-200 text-center">
                   {project.type}
                 </span>
               </div>
