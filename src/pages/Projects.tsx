@@ -7,41 +7,47 @@ const projects = [
     description:
       "Investigating how people organize conceptual knowledge and navigate spatial information through memory-based representations.",
     type: "Current Research",
+    date: null,
     icon: <Brain className="h-6 w-6" />,
   },
   {
     title: "What Happens in the Brain When Conscious Awareness Begins?",
     description:
       "An independent reflection on Railo et al. (2011), exploring how VAN and LP brain signals may mark the early emergence and later amplification of conscious visual experience.",
-    type: "Personal Research · 6 May 2026",
+    type: "Personal Research",
+    date: "6 May 2026",
     icon: <Network className="h-6 w-6" />,
   },
   {
     title: "Why Does Human Vision Outperform Deep Learning?",
     description:
       "A critical analysis of Understanding Human Object Vision, comparing human object recognition with deep convolutional networks and highlighting how action goals, multimodal experience, temporal feedback, and developmental learning make biological vision more adaptive than static image classification.",
-    type: "Personal Research · 13 July 2025",
+    type: "Personal Research",
+    date: "13 July 2025",
     icon: <Eye className="h-6 w-6" />,
   },
   {
     title: "How Personal and Semantic Memories Share Neural Networks",
     description:
       "A personal research reflection on neuroimaging evidence that semantic knowledge and autobiographical memories rely on overlapping brain networks, differing less by separate storage regions than by activation strength, self-reference, imagery, and emotional context.",
-    type: "Personal Research · 19 April 2026",
+    type: "Personal Research",
+    date: "19 April 2026",
     icon: <Library className="h-6 w-6" />,
   },
   {
     title: "An Analysis of Early Visual Pathway Research",
     description:
       "A review of Hubel and Wiesel's foundational work on orientation columns, ocular dominance columns, and simple and complex cells in V1, examining how neural structure supports visual coding while noting later concerns about functional-column morphology, simplified cell classification, and reproducibility limits.",
-    type: "Personal Research · 26 March 2026",
+    type: "Personal Research",
+    date: "26 March 2026",
     icon: <Route className="h-6 w-6" />,
   },
   {
     title: "How Does the Brain Generate Consciousness?",
     description:
       "A comparative reflection on Global Workspace Theory and Reverse Hierarchy Theory, examining whether conscious experience arises through frontoparietal integration and broadcast or through recurrent feedback from higher visual areas back to sensory cortex.",
-    type: "Personal Research · 13 April 2026",
+    type: "Personal Research",
+    date: "13 April 2026",
     icon: <Zap className="h-6 w-6" />,
   },
 ];
@@ -82,6 +88,12 @@ export default function Projects() {
                   {project.description}
                 </p>
               </div>
+
+              {project.date && (
+                <div className="mt-8 border-t border-natural-200 pt-4 text-[10px] font-bold uppercase tracking-[0.2em] text-natural-400">
+                  {project.date}
+                </div>
+              )}
             </motion.article>
           ))}
         </div>
