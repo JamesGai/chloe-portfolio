@@ -22,7 +22,7 @@ export default function Navbar() {
               Chloe Cai
             </h1>
             <p className="text-[10px] uppercase tracking-[0.2em] text-natural-400 font-sans font-semibold">
-              Student of Neuroscience & Psychology
+              Student of Psychology & Neural Science
             </p>
           </div>
         </Link>
