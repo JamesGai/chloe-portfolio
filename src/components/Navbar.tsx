@@ -1,13 +1,13 @@
-import { Link, useLocation } from 'react-router-dom';
-import { motion } from 'motion/react';
+import { Link, useLocation } from "react-router-dom";
+import { motion } from "motion/react";
 
 export default function Navbar() {
   const location = useLocation();
 
   const links = [
-    { name: 'Introduction', path: '/' },
-    { name: 'Projects', path: '/projects' },
-    { name: 'Contact', path: '/contact' },
+    { name: "Introduction", path: "/" },
+    { name: "Projects", path: "/projects" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
@@ -18,8 +18,12 @@ export default function Navbar() {
             P
           </div>
           <div>
-            <h1 className="font-serif text-2xl font-medium tracking-tight text-natural-800">Portfolio</h1>
-            <p className="text-[10px] uppercase tracking-[0.2em] text-natural-400 font-sans font-semibold">Neuroscience & Psychology</p>
+            <h1 className="font-serif text-2xl font-medium tracking-tight text-natural-800">
+              Portfolio
+            </h1>
+            <p className="text-[10px] uppercase tracking-[0.2em] text-natural-400 font-sans font-semibold">
+              Neuroscience & Psychology
+            </p>
           </div>
         </Link>
         <div className="flex items-center space-x-10">
@@ -28,7 +32,9 @@ export default function Navbar() {
               key={link.path}
               to={link.path}
               className={`relative text-xs font-semibold uppercase tracking-widest transition-colors ${
-                location.pathname === link.path ? 'text-natural-800' : 'text-natural-600 hover:text-natural-500'
+                location.pathname === link.path
+                  ? "text-natural-800"
+                  : "text-natural-600 hover:text-natural-500"
               }`}
             >
               {link.name}
