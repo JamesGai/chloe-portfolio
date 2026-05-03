@@ -8,7 +8,7 @@ export default function Layout() {
   return (
     <div className="min-h-screen bg-natural-50 text-natural-700">
       <Navbar />
-      <main className="pt-32 md:pt-24 pb-14 md:pb-20">
+      <main className="pt-24 md:pt-24 pb-14 md:pb-20">
         <AnimatePresence mode="wait">
           <motion.div
             key={location.pathname}

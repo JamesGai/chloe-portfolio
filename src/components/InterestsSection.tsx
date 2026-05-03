@@ -78,8 +78,8 @@ export default function InterestsSection() {
             transition={{ delay: index * 0.1 }}
             className="bg-white p-6 sm:p-8 md:p-10 rounded-[20px] md:rounded-[24px] border border-natural-200 hover:shadow-xl hover:shadow-natural-500/5 hover:border-natural-500 transition-all group"
           >
-            <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 text-center md:text-left">
-              <div className="w-14 h-14 md:w-16 md:h-16 bg-natural-500 rounded-2xl flex items-center justify-center text-white group-hover:scale-110 transition-transform shadow-lg shadow-natural-500/20 shrink-0 mx-auto md:mx-0">
+            <div className="flex flex-row items-center justify-center md:justify-start gap-4 md:gap-6 text-left">
+              <div className="w-14 h-14 md:w-16 md:h-16 bg-natural-500 rounded-2xl flex items-center justify-center text-white group-hover:scale-110 transition-transform shadow-lg shadow-natural-500/20 shrink-0">
                 {category.icon}
               </div>
               <div>

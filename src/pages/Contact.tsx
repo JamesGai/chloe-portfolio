@@ -24,7 +24,7 @@ const contactActions = [
 
 export default function Contact() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 md:py-12">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 md:py-12">
       <section className="bg-natural-100 p-6 sm:p-8 md:p-12 lg:p-16 rounded-[24px] md:rounded-[32px] border border-natural-300">
         <div className="mb-8 md:mb-12 border-b border-natural-300 pb-6 md:pb-8">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif text-natural-800 tracking-tight">
