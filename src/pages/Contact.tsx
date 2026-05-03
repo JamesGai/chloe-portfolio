@@ -46,12 +46,14 @@ export default function Contact() {
               className="group bg-white rounded-[20px] md:rounded-[24px] border border-natural-200 p-6 sm:p-8 md:p-10 min-h-[240px] md:min-h-[280px] flex flex-col justify-between hover:shadow-xl hover:shadow-natural-500/5 hover:border-natural-500 transition-all"
             >
               <div>
-                <div className="mb-6 md:mb-8 h-12 w-12 md:h-14 md:w-14 rounded-2xl bg-natural-500 text-white flex items-center justify-center shadow-lg shadow-natural-500/20 group-hover:scale-105 transition-transform">
-                  {action.icon}
+                <div className="mb-6 md:mb-8 flex items-center gap-4">
+                  <div className="h-12 w-12 md:h-14 md:w-14 rounded-2xl bg-natural-500 text-white flex items-center justify-center shadow-lg shadow-natural-500/20 group-hover:scale-105 transition-transform shrink-0">
+                    {action.icon}
+                  </div>
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-natural-800 leading-tight group-hover:text-natural-500 transition-colors">
+                    {action.title}
+                  </h2>
                 </div>
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-natural-800 leading-tight mb-4 md:mb-5 group-hover:text-natural-500 transition-colors">
-                  {action.title}
-                </h2>
                 <p className="text-base md:text-lg text-natural-600 font-light leading-relaxed max-w-xl">
                   {action.description}
                 </p>
