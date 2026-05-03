@@ -24,7 +24,7 @@ export default function Layout() {
       <footer className="pt-20 pb-12 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center border-t border-natural-300 pt-8 space-y-6 md:space-y-0 text-[10px] uppercase tracking-[0.2em] text-natural-400 font-bold">
           <span>Based in The University of Auckland</span>
-          <span>© 2026 Chloe Cai — Academic v1.0</span>
+          <span>© 2026 Chloe Cai — My Portfolio</span>
         </div>
       </footer>
     </div>
