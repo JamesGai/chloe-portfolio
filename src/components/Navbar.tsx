@@ -5,7 +5,7 @@ export default function Navbar() {
   const location = useLocation();
 
   const links = [
-    { name: "Introduction", path: "/" },
+    { name: "About me", path: "/" },
     { name: "Projects", path: "/projects" },
     { name: "Contact", path: "/contact" },
   ];
@@ -15,14 +15,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-3 group">
           <div className="w-10 h-10 bg-natural-500 rounded-full flex items-center justify-center text-white font-serif italic text-xl transform group-hover:rotate-12 transition-transform duration-300">
-            P
+            C
           </div>
           <div>
             <h1 className="font-serif text-2xl font-medium tracking-tight text-natural-800">
-              Portfolio
+              Chloe Cai
             </h1>
             <p className="text-[10px] uppercase tracking-[0.2em] text-natural-400 font-sans font-semibold">
-              Neuroscience & Psychology
+              Student of Neuroscience & Psychology
             </p>
           </div>
         </Link>
